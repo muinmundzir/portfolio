@@ -109,4 +109,8 @@
   .portfolio-link {
     @apply flex items-center gap-2 px-4 py-2 w-max hover:brightness-100 rounded;
   }
+
+  .contact-link {
+    @apply p-4 w-14 rounded-full hover:brightness-110 self-center;
+  }
 }
