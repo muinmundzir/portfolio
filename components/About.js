@@ -1,6 +1,13 @@
 import Image from 'next/image'
 import Mundzir from '../public/Mundzir.png'
 
+const SKILLS = [
+  { name: 'html', image: 'html.png', yoe: 'Experience 1 year' },
+  { name: 'css', image: 'css.png', yoe: 'Experience 1 year' },
+  { name: 'javascript', image: 'javascript.png', yoe: 'Experience 1 year' },
+  { name: 'reactjs', image: 'reactjs.png', yoe: 'Experience 1 year' },
+  { name: 'tailwindcss', image: 'tailwindcss.png', yoe: 'Experience 1 year' },
+]
 const About = () => {
   return (
     <>
@@ -12,9 +19,9 @@ const About = () => {
             <Image src={Mundzir} alt="profile rounded" />
           </div>
           <div className="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
-            <h2 className="text-primary font-bold text-2xl md:text-3xl mb-3">
+            <p className="text-primary font-bold font-open-sans text-2xl md:text-3xl mb-3">
               Hi, I&apos;m Mu&apos;in Mundzir
-            </h2>
+            </p>
             <p className="mb-3 opacity-70">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Reprehenderit eveniet modi omnis fuga vero nemo nisi dolores
@@ -35,21 +42,17 @@ const About = () => {
             My Skills
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-24 md:gap-12">
-            <div className="skill" data-text="Experience 1 year">
-              <img className="w-16" src="/html.png" alt="html" />
-            </div>
-            <div className="skill" data-text="Experience 1 year">
-              <img className="w-16" src="/css.png" alt="css" />
-            </div>
-            <div className="skill" data-text="Experience 1 year">
-              <img className="w-16" src="/javascript.png" alt="javascript" />
-            </div>
-            <div className="skill" data-text="Experience 1 year">
-              <img className="w-16" src="/reactjs.png" alt="reactjs" />
-            </div>
-            <div className="skill" data-text="Experience 1 year">
-              <img className="w-16" src="/tailwindcss.png" alt="tailwindcss" />
-            </div>
+            {SKILLS.map((skill) => {
+              return (
+                <div key={skill.image} className="skill" data-text={skill.yoe}>
+                  <img
+                    className="w-16"
+                    src={`/${skill.image}`}
+                    alt={skill.name}
+                  />
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
