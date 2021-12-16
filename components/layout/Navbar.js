@@ -1,23 +1,23 @@
-import { useState, useContext } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { useDarkMode } from '../theme/useDarkMode';
-import lightBulb from '../../public/lightBulb.svg';
-import darkMoon from '../../public/darkMoon.svg';
-import menuIcon from '../../public/menuIcon.svg';
-import menuClose from '../../public/menuClose.svg';
+import { useState, useContext } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { useDarkMode } from '../theme/useDarkMode'
+import lightBulb from '../../public/lightBulb.svg'
+import darkMoon from '../../public/darkMoon.svg'
+import menuIcon from '../../public/menuIcon.svg'
+import menuClose from '../../public/menuClose.svg'
 
 export default function Navbar() {
-  const [isDark, setIsDark] = useDarkMode();
-  const [isActive, setIsActive] = useState(false);
+  const [isDark, setIsDark] = useDarkMode()
+  const [isActive, setIsActive] = useState(false)
 
   const toggleHandler = () => {
-    setIsActive(!isActive);
-  };
+    setIsActive(!isActive)
+  }
 
   const toggleThemeHandler = () => {
-    setIsDark(!isDark);
-  };
+    setIsDark(!isDark)
+  }
 
   return (
     <>
@@ -89,5 +89,5 @@ export default function Navbar() {
         </div>
       </nav>
     </>
-  );
+  )
 }
