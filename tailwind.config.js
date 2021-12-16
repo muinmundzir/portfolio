@@ -5,6 +5,10 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      'open-sans': ['Open Sans', 'sans-serif'],
+      nunito: ['Nunito', 'sans-serif'],
+    },
     container: {
       center: true,
       padding: {
@@ -26,4 +30,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}
