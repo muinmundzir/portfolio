@@ -7,6 +7,13 @@ import darkMoon from '../../public/darkMoon.svg'
 import menuIcon from '../../public/menuIcon.svg'
 import menuClose from '../../public/menuClose.svg'
 
+const NAVMENU = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Contact', href: '#contact' },
+]
+
 export default function Navbar() {
   const [isDark, setIsDark] = useDarkMode()
   const [isActive, setIsActive] = useState(false)
@@ -35,30 +42,15 @@ export default function Navbar() {
                 isActive ? '' : 'translate-y-[-200%]'
               } md:translate-y-0`}
             >
-              <Link href="#home">
-                <a onClick={toggleHandler} className="nav-link">
-                  Home
-                </a>
-              </Link>
-              <Link href="#about">
-                <a onClick={toggleHandler} className="nav-link" href="#about">
-                  About
-                </a>
-              </Link>
-              <Link href="#portfolio">
-                <a
-                  onClick={toggleHandler}
-                  className="nav-link"
-                  href="#portfolio"
-                >
-                  Portfolio
-                </a>
-              </Link>
-              <Link href="#contact">
-                <a onClick={toggleHandler} className="nav-link" href="#contact">
-                  Contact
-                </a>
-              </Link>
+              {NAVMENU.map((menu) => {
+                return (
+                  <Link href={menu.href} key={menu.href}>
+                    <a onClick={toggleHandler} className="nav-link">
+                      {menu.label}
+                    </a>
+                  </Link>
+                )
+              })}
             </ul>
 
             {/* Mobile Menu Button */}
