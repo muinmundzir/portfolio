@@ -33,7 +33,7 @@ const Portfolio = () => {
                 </a>
               </Link>
               <Link href="#">
-                <a className="portfolio-link bg-primary-gray dark:bg-primary-white">
+                <a className="portfolio-link bg-primary-gray dark:bg-black">
                   <img className="w-5 h-5" src="/web.svg" alt="web" />
                   website
                 </a>
