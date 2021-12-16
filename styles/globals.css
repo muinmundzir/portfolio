@@ -51,4 +51,27 @@
     border-b-4 border-transparent
     hover:border-primary;
   }
+
+  .home-section {
+    @apply grid items-center
+    grid-cols-1 md:grid-cols-2
+    pt-28 md:pt-0
+    md:h-screen
+    md:overflow-hidden;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:brightness-110
+    font-bold text-white
+    px-4 py-2.5
+    rounded shadow-lg;
+  }
+
+  .container-hero-image {
+    @apply rounded-md md:rounded-none
+    h-60 md:h-auto
+    md:place-self-end
+    overflow-hidden
+    order-1 md:order-2;
+  }
 }
