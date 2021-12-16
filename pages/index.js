@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import About from '../components/About'
 import Header from '../components/Header'
 
 export default function Home() {
@@ -7,8 +8,7 @@ export default function Home() {
       {/* Main Section */}
       <main className="container">
         <Header />
-
-        {/* About Section */}
+        <About />
       </main>
     </Fragment>
   )

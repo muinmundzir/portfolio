@@ -31,7 +31,7 @@
 @layer components {
   .nav {
     @apply fixed top-0 left-0 z-40
-      bg-white/80 dark:bg-primary-gray/80
+      bg-white dark:bg-primary-gray
       py-3 md:py-0
       w-full backdrop-blur;
   }
@@ -73,5 +73,24 @@
     md:place-self-end
     overflow-hidden
     order-1 md:order-2;
+  }
+
+  .skill {
+    @apply relative flex items-center justify-center
+    bg-white dark:bg-primary-gray
+    w-28 h-28
+    rounded-full cursor-pointer;
+  }
+
+  .skill::before {
+    content: attr(data-text);
+    @apply absolute top-full
+    opacity-100 md:opacity-0
+    w-max px-3 py-2 mt-3
+    bg-white dark:bg-primary-gray
+    rounded md:shadow-md transition;
+  }
+  .skill:hover::before {
+    @apply opacity-100;
   }
 }
