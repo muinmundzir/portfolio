@@ -9,12 +9,12 @@ const Header = () => {
       <section id="home" className="home-section">
         <div className="order-2 md:order-1 mt-10">
           <h2 className="text-4xl md:text-6xl font-bold">Hi,</h2>
-          <h2 className="text-4xl md:text-6xl font-bold mt-2">
+          <p className="text-4xl md:text-6xl font-bold mt-2 font-open-sans">
             I am <span className="text-primary">Mu&apos;in Mundzir</span>
-          </h2>
-          <h3 className="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">
+          </p>
+          <p className="text-2xl md:text-3xl font-bold font-open-sans opacity-70 mt-5 mb-10">
             Frontend Developer
-          </h3>
+          </p>
           <Link href="#portfolio">
             <a className="btn-primary">See my work</a>
           </Link>
