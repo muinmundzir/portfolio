@@ -8,9 +8,9 @@ const Header = () => {
       {/* Home Section */}
       <section id="home" className="home-section">
         <div className="order-2 md:order-1 mt-10">
-          <h2 className="text-4xl md:text-6xl font-bold">Hi,</h2>
+          {/* <h2 className="text-4xl md:text-6xl font-bold">Hi,</h2> */}
           <p className="text-4xl md:text-6xl font-bold mt-2 font-open-sans">
-            I am <span className="text-primary">Mu&apos;in Mundzir</span>
+            I'm <span className="text-primary">Mu&apos;in Mundzir</span>
           </p>
           <p className="text-2xl md:text-3xl font-bold font-open-sans opacity-70 mt-5 mb-10">
             Frontend Developer

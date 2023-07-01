@@ -30,10 +30,10 @@ export default function Navbar() {
     <>
       {/* Navbar */}
       <nav className="nav">
-        <div className="container flex items-center justify-between h-16 md:h-20">
-          <h1 className="relative z-30 font-semibold text-2xl">
+        <div className="container flex items-center justify-center h-16 md:h-20">
+          {/* <h1 className="relative z-30 font-semibold text-2xl">
             Mu&apos;in Mundzir
-          </h1>
+          </h1> */}
           <div className="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
             {/* Menu List */}
             <ul
