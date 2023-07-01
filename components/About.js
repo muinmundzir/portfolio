@@ -25,7 +25,7 @@ const About = () => {
               Hi,
             </p>
             <p className="mb-3 opacity-70">
-            My name is Mu'in, and I'm a 26-year-old individual with a keen interest in frontend web and mobile development. JavaScript and TypeScript are the languages I work with on a daily basis. 
+            My name is Mu&apos;in, and I&apos;m a 26-year-old individual with a keen interest in frontend web and mobile development. JavaScript and TypeScript are the languages I work with on a daily basis. 
             </p>
             <p className="opacity-70">
             I have hands-on experience with ReactJS, VueJS, and a bit of React Native. In addition to frontend technologies, I also have working knowledge of backend tech stacks. TypeORM, ExpressJS, NestJS, and PostgreSQL are some of the technologies I have used in my projects.
