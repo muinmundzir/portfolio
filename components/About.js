@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Mundzir from '../public/Mundzir.png'
+import Profile from '../public/profile.jpeg'
 
 const SKILLS = [
   { name: 'html', image: 'html.png', yoe: 'Experience 1 year' },
@@ -7,6 +8,7 @@ const SKILLS = [
   { name: 'javascript', image: 'javascript.png', yoe: 'Experience 1 year' },
   { name: 'reactjs', image: 'reactjs.png', yoe: 'Experience 1 year' },
   { name: 'tailwindcss', image: 'tailwindcss.png', yoe: 'Experience 1 year' },
+  { name: 'vuejs', image: 'vuejs.png', yoe: 'Experience 1 year' },
 ]
 const About = () => {
   return (
@@ -16,22 +18,17 @@ const About = () => {
         {/* Describe */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
           <div className="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-primary">
-            <Image src={Mundzir} alt="profile rounded" />
+            <Image src={Profile} alt="profile rounded" />
           </div>
           <div className="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
             <p className="text-primary font-bold font-open-sans text-2xl md:text-3xl mb-3">
-              Hi, I&apos;m Mu&apos;in Mundzir
+              Hi,
             </p>
             <p className="mb-3 opacity-70">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Reprehenderit eveniet modi omnis fuga vero nemo nisi dolores
-              eligendi ad dicta, est, neque quisquam quis tenetur esse
-              consectetur id? Minus, adipisci.
+            My name is Mu'in, and I'm a 26-year-old individual with a keen interest in frontend web and mobile development. JavaScript and TypeScript are the languages I work with on a daily basis. 
             </p>
             <p className="opacity-70">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Perferendis adipisci obcaecati impedit id possimus. Ipsam tempore
-              nesciunt eius quibusdam eos!
+            I have hands-on experience with ReactJS, VueJS, and a bit of React Native. In addition to frontend technologies, I also have working knowledge of backend tech stacks. TypeORM, ExpressJS, NestJS, and PostgreSQL are some of the technologies I have used in my projects.
             </p>
           </div>
         </div>
